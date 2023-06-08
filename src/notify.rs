@@ -23,7 +23,7 @@ fn notify(post_id: PostId, post_author: AccountId, action: &str) -> Promise {
                     "notify": json!({
                         "key": post_author,
                         "value": {
-                            "type": format!("devgovgigs/{}", action),
+                            "type": format!("near-analytics/{}", action),
                             "post": post_id,
                         },
                     }).to_string()

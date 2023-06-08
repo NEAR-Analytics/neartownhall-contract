@@ -1,5 +1,5 @@
 [package]
-name = "devgovgigs"
+name = "near-analytics"
 version = "0.1.0"
 authors = ["Maksym Zavershynskyi"]
 edition = "2018"
