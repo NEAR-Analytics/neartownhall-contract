@@ -28,7 +28,7 @@ fn repost_internal(post: Post, contract_address: AccountId) -> near_sdk::serde_j
     };
 
     let text = format!(
-        "@{author} [Posted on Developer DAO Board]({post_link})\n{title}{desc}",
+        "@{author} [Posted on TownHall Board]({post_link})\n{title}{desc}",
         author = post.author_id,
         post_link = post_link,
         title = title,
@@ -87,7 +87,7 @@ mod tests {
         let expected = json!({
             "near-analytics.near": {
                 "post": {
-                  "main": "{\"type\":\"md\",\"text\":\"@neardevgov.near [Posted on Developer DAO Board](https://near.social/#/near-analytics.near/widget/Post?id=0)\\n## Idea: A call for Zero Knowledge Work Group members!\\nWe are excited to create a more formal Zero Knowledge Work Group (WG) to oversee official decisions on Zero Knowledge proposals. We’re looking for 3-7 experts to participate. Reply to the post if you’re interested in becoming a work group member.\"}"
+                  "main": "{\"type\":\"md\",\"text\":\"@neardevgov.near [Posted on TownHall Board](https://near.social/#/near-analytics.near/widget/Post?id=0)\\n## Idea: A call for Zero Knowledge Work Group members!\\nWe are excited to create a more formal Zero Knowledge Work Group (WG) to oversee official decisions on Zero Knowledge proposals. We’re looking for 3-7 experts to participate. Reply to the post if you’re interested in becoming a work group member.\"}"
                 },
                 "index": {
                   "post": "{\"key\":\"main\",\"value\":{\"type\":\"md\"}}"
